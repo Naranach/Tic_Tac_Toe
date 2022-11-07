@@ -307,3 +307,10 @@ border-radius: 50%;
     cursor: pointer;
     color: yellow;
 }
+.icon {
+    background: url('icon.ico');
+    height: 32px;
+    width: 32px;
+    display: block;
+    /* Other styles here */
+}

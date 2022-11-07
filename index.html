@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+    <!-- <script src="algorithm.js" defer></script> -->
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="board" id="board">
+    <header class="header"><h1>Tic-Tac-Toe</h1></header>
+
+<div class="startgame"> <button id="start">START GAME</button></div>
+<div class="container2">
+   
+    <button id="player_button"> Player Versus Player</button>
+    <button id="computer_button">  ̶P̶l̶a̶y̶e̶r̶ ̶V̶e̶r̶s̶u̶s̶ ̶C̶o̶m̶p̶u̶t̶e̶r̶</button>
+</div>
+<div class="buttons">
+    <button id="x_button">x</button>
+    <button id="o_button">o</button>
+</div>
+<h1  class=message id="message">Please Before The Start Choose A Marker Currently You Can only Play versus Player.</h1>
+<main class="main">
+    <div class="board " id="board">
+    <div class="cell " data-cell></div>
+    <div class="cell  " data-cell></div>
     <div class="cell" data-cell></div>
     <div class="cell" data-cell></div>
     <div class="cell" data-cell></div>
@@ -17,8 +34,12 @@
     <div class="cell" data-cell></div>
     <div class="cell" data-cell></div>
     <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
+    
     </div>
+    <div class="reset">
+        <button   type= reset id="restart_button"> Restart !</button>
+    </div>
+</main>
+   <div class="footer"></div>
 </body>
 </html>

@@ -1,20 +1,46 @@
 *,*::after, *::before{
     box-sizing: border-box;
+    
 }
 body{
     margin:0;
+    background-color: grey;
+    margin-bottom: 80px;
+    line-height: 1.6;
+    
 }
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
 :root {
     --cell-size:100px;
     --mark-size:calc(var(--cell-size)*.9);
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.container2{
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    padding: 5px;
+}
+.message{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .board{
-    width: 100vw;
-    height: 100vh;
+    width: 440px;
+    height: 400px;
     display: grid;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    margin: 0px auto;
     grid-template-columns: repeat(3,auto);
 }
 .cell{
@@ -109,3 +135,175 @@ border-radius: 50%;
    background-color: white;
   
    }
+   .startgame{
+   
+        display: flex;
+        font-weight: bold;
+        font-size: larger;
+        width:100%;
+        justify-content: center;
+        padding: 12px;
+   }
+   .main{
+    margin: 0 20px;
+   }
+   .header{
+    display: flex;
+    font-weight: bold;
+    font-size: larger;
+    background-color:rgb(89, 210, 240);
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin: 0;
+    padding: 0 20px;
+}
+.reset{
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    padding: 3px;
+    
+}
+   .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 10%;
+    font-size: 28px;
+    background-color: aqua;
+   }
+
+/* Buttons Styles */
+#x_button{
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: #4c5c68;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#o_button{
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: #4c5c68;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#x_button:not([disabled]):hover{
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: grey;
+    -webkit-transition: background-color 500ms linear;
+    transition:500ms linear;
+    -ms-transition: background-color 500ms linear;
+    border-radius: 7px;
+    color: yellow;
+    transform: rotate(360deg);
+}
+#o_button:not([disabled]):hover{
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: grey;
+    -webkit-transition: background-color 500ms linear;
+    transition: 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transform: rotate(360deg);
+    border-radius: 7px;
+    color: yellow;
+}
+
+
+#restart_button{
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: #4c5c68;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#restart_button:not([disabled]):hover{  
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: grey;
+    transition: 500ms linear;
+    transform: rotate(360deg);
+    border-radius: 7px;
+    cursor: pointer;
+    color: yellow;
+}
+
+#player_button{
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: #4c5c68;
+    border-radius: 7px;
+    cursor: pointer;
+    color: aqua;
+}
+
+#player_button:not([disabled]):hover{  
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: grey;
+    transition: 500ms linear;
+    border-radius: 7px;
+    cursor: pointer;
+    color: yellow;
+}
+
+#computer_button{
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: #4c5c68;
+    border-radius: 7px;
+    cursor: pointer;
+    color: aqua;
+}
+
+#computer_button:not([disabled]):hover{  
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: grey;
+    transition: 500ms linear;
+    border-radius: 7px;
+    cursor: pointer;
+    color: yellow;
+}
+
+#start{
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: #4c5c68;
+    border-radius: 7px;
+    cursor: pointer;
+    color: aqua;
+}
+
+#start:not([disabled]):hover{  
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid ;
+    background-color: grey;
+    transition: 500ms linear;
+    border-radius: 7px;
+    cursor: pointer;
+    color: yellow;
+}

@@ -93,12 +93,12 @@ cellElements.forEach(cell=>{
 }
 
 function handleClick(e){
-    console.log('clicked')
+    
     const cell=e.target
 const currentClass=circleturn ? O_Class : X_Class
 placeMark(cell,currentClass)
 if(checkWin(currentClass)){
-    console.log('winner')
+    
     reset()
     endGame(false)
 }else if(isDraw()){

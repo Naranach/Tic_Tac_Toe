@@ -24,6 +24,7 @@ startButton.disabled=true
 Xbutton.disabled=true
 Obutton.disabled=true
 Restartbutton.disabled=true
+ComputerButton.disabled=true
 startButton.addEventListener('click',()=>{
     startGame()
     Xbutton.disabled=true
@@ -39,6 +40,7 @@ PlayerButton.addEventListener('click',()=>{
 Xbutton.disabled=false
 Obutton.disabled=false
 Restartbutton.disabled=false
+PlayerButton.disabled=true
 })
 
 restart_button.addEventListener('click',()=>{
@@ -53,7 +55,7 @@ Xbutton.disabled=true
 Obutton.disabled=true
 Restartbutton.disabled=true
  PlayerButton.disabled=false
-ComputerButton.disabled=false
+ ComputerButton.disabled=true
     
 })
 x_button.addEventListener('click',()=>{ 
@@ -79,7 +81,7 @@ function reset(){
         })
 boardelement.classList.remove(O_Class)
 boardelement.classList.remove(X_Class)
-result.innerText=''
+result.innerText='Please Before The Start Choose A Marker Currently You Can only Play versus Player.'
 };
 
 function startGame(){
@@ -95,7 +97,6 @@ function handleClick(e){
     const cell=e.target
 const currentClass=circleturn ? O_Class : X_Class
 placeMark(cell,currentClass)
-
 if(checkWin(currentClass)){
     console.log('winner')
     reset()
@@ -147,3 +148,6 @@ function checkWin(currentClass){
         })
     })
 }
+//*****                Ai Mechanics  */
+
+
